@@ -16,6 +16,13 @@ const Wrapper = styled.section`
     border-radius: 6px;
 `;
 
+const Profil = styled.div`
+
+flex-basis: 10%;
+float: left;
+`;
+
+
 const BackgroundImage = styled.div`
     display: flex;
     background-image: url(${CityImage});
@@ -79,7 +86,7 @@ const Route = styled(Link)`
         color: ${Colors.Silver};
     }
 `;
-//przeniesc
+
 interface IPublication {
     userId: number,
     id: number,
@@ -105,11 +112,12 @@ const LatestPublications: FC = () => {
             <BackgroundImage>
                 <BackgroundImageGradient>
                     <BackgroundImageCaption>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/> <br/> 7 Jan.  2020 John Doe
                     </BackgroundImageCaption>
+                  
                 </BackgroundImageGradient>
             </BackgroundImage>
-            <Container>
+            <Container>              
                 <SectionTitle>Latest publications</SectionTitle>
                 <Content>
                     {
@@ -117,10 +125,10 @@ const LatestPublications: FC = () => {
                     .slice(0, 3)
                     .map((item: IPublication) => (
                         <Publication
-                        title={item.title}
-                        // image={CityImage}
+                        title={item.title}                       
                         text={item.body}
-                        date="1 Styczeń 2021"
+                        date="25 Czerwiec 2021"
+                        publicated="John Doe"
                         />
                     ))}
                 </Content>

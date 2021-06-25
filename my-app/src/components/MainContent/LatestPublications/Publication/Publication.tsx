@@ -50,11 +50,11 @@ const InformationContainer = styled.div`
 interface IPublication {
     title: string,
     text: string,
-    // image: string,
     date: string,
+    publicated: string,
 }
 
-const Publication: FC<IPublication> = ({title, text, date, ...props}) => {
+const Publication: FC<IPublication> = ({title, text, date, publicated, ...props}) => {
     return (
         <Wrapper>
             <Thumbnail />
@@ -66,7 +66,7 @@ const Publication: FC<IPublication> = ({title, text, date, ...props}) => {
                     {text}
                 </Body>
                 <InformationContainer>
-                    {date}
+                    {date}, {publicated}
                 </InformationContainer>
             </Content>
         </Wrapper>
