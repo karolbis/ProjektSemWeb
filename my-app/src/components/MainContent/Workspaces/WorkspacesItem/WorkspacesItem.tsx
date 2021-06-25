@@ -1,37 +1,38 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
 import {Colors} from '../../Colors'
-
 import ContractImage from '../../../../assets/contract.jpg'
-//import Icon from '../../../../assets/icons/ecosystem.svg'
 
 
 const Wrapper = styled.div`
     margin: .4em;
     border-radius: 6px;
-    position: relative;
+    position: inherit;
     background-color: ${Colors.White};
-    width: 16em;
+    width: 22em;
     height: 12em;
     box-shadow: 0px 3px 3px ${Colors.Silver};
     display: flex;
-    flex-direction: column;
+    flex-direction: row ;
+    float: left;
 `;
 
 const Image = styled.div`
     width: 100%;
-    height: 40%;
+    height: 50%;
     background-image: url(${ContractImage});
     background-size: cover;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     z-index: 1;
+   
 `;
 
 const Content = styled.div`
     flex-grow: 2;
-    padding: .5em;
+    padding: .10em;
     position: relative;
+    
 `;
 
 const CardIconContainer = styled.div`
@@ -45,10 +46,11 @@ const CardIconContainer = styled.div`
     top: -1.5em;
     width: 3em;
     height: 3em;
+    
 `;
 
 const CardIcon = styled.img`
-    opacity: 0.3;
+    opacity: 0.5;
 `;
 
 const Title = styled.h2`

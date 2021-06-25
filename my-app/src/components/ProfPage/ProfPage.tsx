@@ -76,7 +76,40 @@ const ExpandRow = styled.div`
         line-height: 1.4;
     }
 `;
-
+const Row1 = styled.div`
+    width: 16%;
+    float:left;
+   
+`;
+const Row2 = styled.div`
+    width: 16%;
+    float:left;
+  
+`;
+const Row3 = styled.div`
+    width: 16%;
+    float:left;
+   
+`;
+const Row4 = styled.div`
+    width: 16%;
+    float:left;
+    
+`;
+const Row5 = styled.div`
+    width: 16%;
+    float:left;
+    
+`;
+const Row6 = styled.div`
+    width: 16%;
+    float:left;
+   
+`;
+const Row7 = styled.div`
+    width: -80%;
+    float:left;
+`;
 
 const Section = styled.section`
     border-bottom: #ccc solid 1px;
@@ -104,6 +137,7 @@ const Tag = styled.span`
     border-radius: 3px 6px;
     &:first-child { margin-left: 0; }
 `;
+
 
 class Profile extends Component {
     render() {
@@ -170,47 +204,128 @@ class Profile extends Component {
                     </Tags>
               </Section>
               <Section>
-                    Panel Informations 
-                    <br/>
-                    <br/>
+                   <h3> Panel Informations </h3><br/><br/>
                <SectionTitle>Hourly fee</SectionTitle>
-                    610$/hour (Negociated)
-                    <br/>
-                    <br/>
+                    610$/hour (Negociated)<br/><br/>
                 <SectionTitle>Terms & conditions </SectionTitle>
-                    Monthly 10k$ retainer - see with Jeanny Smith 
-                    <br/>       
-                    <br/>        
+                    Monthly 10k$ retainer - see with Jeanny Smith<br/><br/>      
                     <img src="" alt="Attachment_lorem-ipsum25425.jpg"></img>            
-
-              </Section>                 
-              <Section>                 
-                   Services & projects                  
-                   <br/>
-                   <br/>
-                    Corporate M&A and international acquisitions
-                    
-                    <br/>
-                    <br/>
-                    <br/>
+                 </Section>                 
+                 <Section>                 
+                   Services & projects<br/><br/>
+                    Corporate M&A and international acquisitions<br/><br/><br/>
                     Internal correspondates 
-                    
-
-                </Section>
-                
+                </Section> 
                 <Section>
-
-                Proposals
-                <br/>
-                <br/>
-
+                Proposals<br/><br/>                
+                <Row1>Name</Row1>          
+                <Row2> Entity</Row2>  
+                <Row3>Location</Row3>
+                <Row4>Expertise</Row4>
+                <Row5> Date</Row5>
                 </Section>
-                
-                
-                
-                
-                </Wrapper>
-                    
+                <Section>
+                <Row1>Operati Ti..<br/><br/>
+                Op. Prometh..<br/><br/>
+                Op. Latandre 
+                </Row1>
+                <Row2>
+                Renaualt Co.. <br/> <br/>
+                Renaualt HQ..<br/><br/>
+                Renaualt Br..
+                </Row2>
+                <Row3>France<br/><br/>
+                USA<br/><br/>
+                Italia
+                </Row3>
+                <Row4>#Tax<br/><br/>
+                #MSA<br/><br/>
+                #Social
+                </Row4>
+                <Row5>20/01/2018<br/><br/>           
+                18/02/2018<br/><br/>               
+                18/02/2018<br/><br/>               
+                </Row5>
+                <Row6>Racine <br/><br/>
+                Clifford Chance <br/> <br/>
+                 SVZ
+                </Row6>
+               <Row7>
+               <SectionTitle>See more proposals</SectionTitle>
+               </Row7>
+               </Section> 
+                <Section>
+                Internal Reviews <br/><br/><br/>
+                <Row1>Name</Row1>          
+                <Row2>Entity</Row2>  
+                <Row3>Location</Row3>
+                <Row4>Expertise</Row4>
+                <Row5>Date</Row5>
+                </Section>
+                <Section>
+                <Row1>
+                Operati Ti..<br/><br/>
+                Op. Prometh..<br/><br/>
+                Op. Latandre <br/>
+                </Row1>          
+                <Row2>
+                Renaualt Co..<br/><br/>
+                Renaualt HQ..<br/> <br/>
+                Renaualt Br..                                       
+                </Row2>  
+                <Row3>
+                France<br/> <br/>
+                USA<br/> <br/>
+                Italia
+                </Row3>
+                <Row4>
+                #Tax<br/> <br/>
+                #MSA<br/> <br/>
+                #Social
+                </Row4>
+                <Row5>
+                20/01/2018<br/> <br/>           
+                18/02/2018<br/><br/>               
+                18/02/2018
+                </Row5>
+                <Row7>
+                <br/><br/>
+               <SectionTitle>See more Reviews</SectionTitle>
+               </Row7>
+                </Section>
+                <Section>
+                    Amount of fees<br/><br/>
+                    <Row1>Year<br/><br/>
+                     2019<br/>
+                     2018<br/>
+                     2017
+                    </Row1>
+                    <Row2>
+                    Cost center<br/><br/>
+                     CS 153<br/>
+                     CS 153<br/>
+                     CS 47<br/>
+                     CS 153<br/>
+                     CS 32
+                    </Row2>
+                    <Row3>
+                    Total amount<br/><br/>
+                     3 500$<br/>
+                     9 500$<br/>
+                     10 500$<br/>
+                     18 500$<br/>
+                     15 500$
+                    </Row3>
+                    <Row4>
+                    Law firm<br/><br/>
+                     Cliford chance<br/>
+                     Linklaters<br/>
+                     Linklaters<br/>
+                     Linklaters<br/>
+                     Linklaters
+                    </Row4>
+                </Section>
+                </Wrapper>        
         )
     }
 }

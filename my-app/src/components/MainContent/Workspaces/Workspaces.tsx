@@ -17,9 +17,9 @@ import { SectionTitle } from '../../styledHelpers/Components';
 
 const Container = styled.section`
     display: inline;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    position: relative;
+    position: relative;  
 `;
 
 const Title = styled(SectionTitle)`
@@ -34,6 +34,7 @@ const Workspaces: FC = () => {
             title: "Client contract",
             icon: ContractIcon,
             lastUpdate: "1",
+            
         },
         {
             title: "Supplier contract",
