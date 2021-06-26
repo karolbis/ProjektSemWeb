@@ -16,6 +16,7 @@ import HomePage from './components/HomePage/MainPage';
 import ProfilePage from './components/ProfPage/ProfPage';
 import PublicationsPage from './components/publication/publication';
 import MockPage from './components/Emptypage/EmptyPage';
+import Entities from './components/EntitiesPage/EntitiesPage';
 
 const Wrapper = styled.div`
   display: flex;
@@ -66,7 +67,7 @@ const App: FC = () => {
                   <MockPage />
                 </Route>
                 <Route exact path="/entities">
-                  <MockPage />
+                  <Entities />
                 </Route>
                 <Route exact path="/people">
                   <MockPage />

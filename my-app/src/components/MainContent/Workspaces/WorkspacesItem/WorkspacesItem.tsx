@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
 const Image = styled.div`
     width: 100%;
-    height: 50%;
+    height: 70%;
     background-image: url(${ContractImage});
     background-size: cover;
     border-top-left-radius: 6px;
@@ -43,7 +43,7 @@ const CardIconContainer = styled.div`
     box-shadow: 0px 3px 3px ${Colors.Silver};
     border-radius: 3px;
     position: absolute;
-    top: -1.5em;
+    top: -1.em;
     width: 3em;
     height: 3em;
     
@@ -56,13 +56,14 @@ const CardIcon = styled.img`
 const Title = styled.h2`
     color: ${Colors.PrimaryText};
     font-size: 1.2em;
-    margin-left: 4.6em;
+    margin-left: 4.1em;
 `;
 
 const LastUpdate = styled.span`
     font-size: .8em;
     color: ${Colors.Gray};
-    margin: .5em;
+    margin: .10em;
+    padding: 1em;
 `;
 
 export interface IWorkspacesItem {
